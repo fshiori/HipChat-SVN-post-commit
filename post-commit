@@ -85,7 +85,7 @@ REV="$2"
 CMT="${LOOK} log ${REPO}"
 WHO="${LOOK} author ${REPO}"
 FILES="${LOOK} changed ${REPO}"
-HCCTL="${HCCLI} -t ${TOKEN} -r ${ROOM} -f ${USER}"
+HCCTL="${HCCLI} -v v2 -t ${TOKEN} -r ${ROOM} -f ${USER}"
 
 # Finally, let's do what needs to be done.
 post
