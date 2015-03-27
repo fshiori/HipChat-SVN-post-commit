@@ -82,9 +82,9 @@ fi
 # HCCTL is the call to the hipchat_cli
 REPO="$1"
 REV="$2"
-CMT="${LOOK} log ${REPO}"
-WHO="${LOOK} author ${REPO}"
-FILES="${LOOK} changed ${REPO}"
+CMT="${LOOK} log ${REPO} -r ${REV}"
+WHO="${LOOK} author ${REPO} -r ${REV}"
+FILES="${LOOK} changed ${REPO} -r ${REV}"
 HCCTL="${HCCLI} -v v2 -t ${TOKEN} -r ${ROOM} -f ${USER}"
 
 # Finally, let's do what needs to be done.
